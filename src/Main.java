@@ -36,12 +36,20 @@ public class Main {
         int year = 2021;
         if (year % 4 == 0 && year % 400 == 0) {
             System.out.println(+year + " год является високосным");
-        } else if(year % 100 == 0 || year % 400 != 0) {
+        } else if (year % 100 == 0 || year % 400 != 0) {
             System.out.println(+year + " год не является високосным");
         }
         // Задание 4
         System.out.println(" Задание 4");
         int deliveryDistance = 95;
+        if (deliveryDistance < 20)
+            System.out.println("Потребуется дней: 1");
+        else if (20 <= deliveryDistance && deliveryDistance < 60)
+            System.out.println("Потребуется дней: 2");
+        else if (60 <= deliveryDistance && deliveryDistance < 100)
+            System.out.println("Потребуется дней: 3");
+        else if (deliveryDistance > 100)
+            System.out.println("Доставка не осуществляется");
 
     }
 }
