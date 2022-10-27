@@ -30,10 +30,14 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         else if (clientOS == 1 && clientDiveceYear < 2015)
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        // Заданеи 3
+        // Задание 3
         System.out.println(" Задание 3");
 
-
-
+        int year = 2021;
+        if (year % 4 == 0 && year / 400 == 0) {
+            System.out.println(+year + " год является високосным");
+        } else if(year % 100 == 0 || year % 400 != 0) {
+            System.out.println(+year + " год не является високосным");
+        }
     }
 }
